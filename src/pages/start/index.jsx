@@ -16,21 +16,24 @@ export default function Start(){
 
     function handlePlayer(e){
         e.preventDefault()
-        console.log(player)
-        setFieldPlayer(false)
+        if (player){
+            setFieldPlayer(false)
+        }
     }
+
     return(
         <div className="container">
             <h1>MhedQuiz</h1>
             {fieldPlayer && (
                 <div>
+                    <p>Digite seu nome e clique em entrar:</p>
                     <input type="text" placeholder='Digite seu nome aqui' value={player} onChange={(e) => setPlayer(e.target.value)} />
-                    <button onClick={handlePlayer}>Salvar Nome</button>
+                    <button onClick={handlePlayer}>Entrar</button>
                 </div>
             )}
-            {quizState.gameStage === "Start" && <Welcome />}
+            {!fieldPlayer && quizState.gameStage === "Start" && <Welcome player={player}/>}
             {quizState.gameStage === "Playing" && <Question />}
-            {quizState.gameStage === "End" && <GameOver player={player} />}
+            {quizState.gameStage === "End" && <GameOver player={player} setFieldPlayer={setFieldPlayer} setPlayer={setPlayer} />}
         </div>
     )
 }

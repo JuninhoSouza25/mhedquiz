@@ -38,11 +38,22 @@ function Question() {
     setSegundos(45)
   }
 
+  let timeBar
+
+  if (segundos >= 30){
+    timeBar = "progress-full"
+  }else if(segundos < 30 && segundos >= 15){
+    timeBar = "progress-middle"
+  }else if(segundos < 15){
+    timeBar = "progress-low"
+  }
+
   return (
     <div className='container'>
       <p>Pergunta {quizState.currentQuestion + 1} de {quizState.questions.length}</p>
       <div>
           <h1 className='timer'>{minutos < 10 ? "0" + minutos : minutos}:{segundos < 10 ? "0" + segundos : segundos}</h1>
+          <progress className={timeBar} value={segundos} max="45">{minutos < 10 ? "0" + minutos : minutos}:{segundos < 10 ? "0" + segundos : segundos}</progress>
       </div>
       <h3>Quem é essa criança?</h3>
       <div>

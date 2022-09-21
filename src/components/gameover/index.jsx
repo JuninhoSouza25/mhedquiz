@@ -1,8 +1,14 @@
 import { useContext } from "react"
 import { QuizContext } from "../../context/quiz"
 
-function GameOver( {player} ) {
+function GameOver( {player, setFieldPlayer, setPlayer} ) {
     const [quizState, dispatch] = useContext(QuizContext)
+
+    function handleClick(){
+      dispatch({type: 'NEW_GAME'})
+      setFieldPlayer(true)
+      setPlayer()
+    }
 
   return (
     <div className="container">
@@ -10,7 +16,7 @@ function GameOver( {player} ) {
         <p>Parabens {player} você chegou no final do MhedQuiz!</p>
         <p>Pontuação: {quizState.score} </p>
         <p>Você acertou {quizState.questionsAnswered} de {quizState.questions.length}{" "} perguntas.</p>
-        <button onClick={() => dispatch({type: 'NEW_GAME'})}>Jogar novamente</button>
+        <button onClick={handleClick}>Jogar novamente</button>
     </div>
   )
 }

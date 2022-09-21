@@ -75,8 +75,6 @@ const quizReducer = (state, action) => {
                 timeScore = 0
             }
 
-            console.log(time)
-
             return {
                 ...state,
                 score: state.score + timeScore,
