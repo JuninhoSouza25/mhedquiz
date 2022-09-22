@@ -1,5 +1,17 @@
 const data = [
     {
+        image: "https://live.staticflickr.com/65535/52376558184_4281045aa9_w.jpg",
+        options:  [
+            "Bora Bill!!",
+            "Bora Fi do Bill!!",
+            "Bora Muié do Bill!!",
+            "Bora Cachorro do Bill!!",
+            "Bora Cabra do Bill!!"
+        ],
+        answer: "Bora Bill!!"
+
+    },
+    {
         image: "https://live.staticflickr.com/65535/52374026773_bf38aafbe7_w.jpg",
         options:  [
             "Marcus Fantoni",
@@ -9,6 +21,18 @@ const data = [
             "Bruno"
         ],
         answer: "Bruno"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52375231437_9d96ce1e50_w.jpg",
+        options:  [
+            "Stefanie",
+            "Elizangela",
+            "Aline",
+            "Mércia",
+            "Nayara"
+        ],
+        answer: "Elizangela"
 
     },
     {
@@ -24,6 +48,18 @@ const data = [
 
     },
     {
+        image: "https://live.staticflickr.com/65535/52376723775_f1588d86d5_w.jpg",
+        options:  [
+            "Fernanda Moreira",
+            "Mércia",
+            "Poliana",
+            "Fernanda Rodrigues",
+            "Brenda"
+        ],
+        answer: "Fernanda Moreira"
+
+    },
+    {
         image: "https://live.staticflickr.com/65535/52374026763_76a0b37dda_w.jpg",
         options:  [
             "Fernanda Moreira",
@@ -33,6 +69,30 @@ const data = [
             "Thais"
         ],
         answer: "Fernanda Rodrigues"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52375169174_cbd8549b3a_w.jpg",
+        options:  [
+            "Glauber",
+            "Bruno",
+            "Douglas",
+            "Eugênio",
+            "Paulo"
+        ],
+        answer: "Glauber"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52376619744_3b86a4dc3e_w.jpg",
+        options:  [
+            "Cileia",
+            "Jane",
+            "Luana",
+            "Elizangela",
+            "Glauciene"
+        ],
+        answer: "Glauciene"
 
     },
     {
@@ -57,6 +117,18 @@ const data = [
             "Brenda"
         ],
         answer: "Leticia"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52376746960_1aa54e7e4c_w.jpg",
+        options:  [
+            "Larissa",
+            "Stefanie",
+            "Thais",
+            "Brenda",
+            "Luana"
+        ],
+        answer: "Luana"
 
     },
     {
