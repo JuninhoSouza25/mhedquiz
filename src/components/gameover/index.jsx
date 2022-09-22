@@ -20,6 +20,7 @@ function GameOver( {player, setFieldPlayer, setPlayer} ) {
         <p>Pontuação: {quizState.score} </p>
         <p>Você acertou {quizState.questionsAnswered} de {quizState.questions.length}{" "} perguntas.</p>
         <p>Numero de tentativas: {quizState.attempt}</p>
+        <p>Printe essa tela e nos envie!</p>
         <button onClick={handleClick}>Jogar novamente</button>
     </div>
   )

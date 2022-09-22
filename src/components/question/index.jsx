@@ -49,15 +49,15 @@ function Question() {
   }
 
   return (
-    <div className='container'>
+    <div className='container-question'>
       <p>Pergunta {quizState.currentQuestion + 1} de {quizState.questions.length}</p>
-      <div>
-          <h1 className='timer'>{minutos < 10 ? "0" + minutos : minutos}:{segundos < 10 ? "0" + segundos : segundos}</h1>
+      <div className='container-progress'>
+          <spam className='timer'>{minutos < 10 ? "0" + minutos : minutos}:{segundos < 10 ? "0" + segundos : segundos}</spam>
           <progress className={timeBar} value={segundos} max="45">{minutos < 10 ? "0" + minutos : minutos}:{segundos < 10 ? "0" + segundos : segundos}</progress>
       </div>
-      <h3>Quem é essa criança?</h3>
+      <p id='question'>Quem é essa criança?</p>
       <div>
-        <img src={currentQuestion.image} alt="foto do funcionario criança" />
+        <img className='img-question' src={currentQuestion.image} alt="foto do funcionario criança" />
       </div>
       <div className='options-container'>
         {currentQuestion.options.map((option) => (
@@ -70,7 +70,7 @@ function Question() {
         ))}
       </div>
       {quizState.answeredSelected && (
-        <button onClick={handleClick}>Continuar</button>
+        <button className='btn-continue' onClick={handleClick}>Continuar</button>
       )}
     </div>
   )

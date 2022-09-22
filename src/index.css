@@ -4,4 +4,20 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+  font-family: var(--primary-font);
+  background-image: url('./img/bg.jpg');
+
+
+  --001:#ffffff;
+  --002:#000000;
+  --003:rgb(231, 33, 93);
+  --004:rgb(21, 89, 140);
+  --005:#3174AE;
+  --006:#FFD412;
+  --007:#C1BDC6;
+  --008:#5e5e5f;
+  --009:#4DB9C5;
+
+  --primary-font: 'Luckiest Guy', cursive;
+  --secondary-font: 'Roboto', sans-serif;
 }

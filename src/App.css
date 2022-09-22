@@ -1,30 +1,169 @@
+.container-start {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+
+.img-full {
+    width: 400px;
+    transition: all .5s;
+}
+
+.img-low {
+    width: 130px;
+    transition: all .5s;
+}
+
+.container-player {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.container-player p {
+    color: var(--004);
+    font-size: 2em;
+}
+
+input {
+    box-sizing: border-box;
+    width: 80%;
+    padding: .5em 1em;
+    border: 2px solid var(--002);
+    background-color: var(--006);
+    color: var(--002);
+    text-align: center;
+    border-radius: 10px;
+}
+
+button {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    width: 80%;
+    margin-top: 1em ;
+    padding: .5em 1em;
+    border: 2px solid var(--002);
+    background: linear-gradient(40deg, var(--004) 0%, var(--005) 100%);
+    color: var(--001);
+    cursor: pointer;
+    transition: ease all 2s
+}
+
+button:hover {
+    background: linear-gradient(40deg, var(--005) 0%, var(--004) 100%);
+}
+
+.logo-mhedtech {
+    width: 130px;
+}
+
+.container-welcome p:first-child {
+    font-family: var(--primary-font);
+    color: var(--005);
+    font-size: 1.5em;
+}
+
+#last {
+    font-size: .9em;
+    color: var(--003);
+}
+
+.container-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer {
+    position: absolute;
+}
+
+.img-question {
+    border-radius: 15px;
+    border: 3px solid black;
+    height: 300px;
+}
+
+.btn-continue {
+    width: 60%;
+    font-size: 1em;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    justify-content: space-between;
+}
+
+.option {
+    border: 2px solid var(--002);
+    border-radius: 15px;
+    height: 16%;
+    cursor: pointer;
+    color: var(--002);
+}
+
+.unselected {
+    background-color: var(--009);
+}
+
+.selected {
+    background-color: var(--006);
+}
+
+.option:hover {
+    background-color: var(--004);
+    color: var(--001);
+}
+
 progress {
     box-sizing: border-box;
+    border-radius: 15px;
     border: 3px solid black;
     width: 600px;
     height: 30px;
     color: #000;
-    
 }
 
 .progress-full::-webkit-progress-value {
     background-color: #fff;
     background: linear-gradient(90deg, rgba(11,158,13,.7) 0%, rgba(11,158,13,1) 100%);
     transition-duration: .8s;
+    border-radius: 15px;
 }
 
 .progress-middle::-webkit-progress-value {
     background-color: #fff;
     background: linear-gradient(90deg,rgba(237,223,57,.7) 0%, rgba(237,223,57,1) 100%);
     transition-duration: .8s;
+    border-radius: 15px;
 }
 
 .progress-low::-webkit-progress-value {
     background-color: #fff;
     background: linear-gradient(90deg, rgba(226, 1, 1,.7) 0%, rgba(226, 1, 1,1) 100%);
     transition-duration: .8s;
+    border-radius: 15px;
 }
 
 progress::-webkit-progress-bar {
     background-color: #fff;
+    border-radius: 15px;
 }

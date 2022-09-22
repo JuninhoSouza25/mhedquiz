@@ -178,6 +178,18 @@ const data = [
         ],
         answer: "Wander"
 
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52377018603_1c0c14992a_w.jpg",
+        options:  [
+            "Rafael Danilo",
+            "Italo",
+            "Eduardo Rangel",
+            "Sidney",
+            "Eugênio"
+        ],
+        answer: "Rafael Danilo"
+
     }
 ];
 
