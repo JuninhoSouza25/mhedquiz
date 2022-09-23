@@ -254,7 +254,7 @@ progress::-webkit-progress-bar {
     }
 
     .img-low {
-        width: 130px;
+        width: 100px;
     }
 
     button, .btn-continue {
