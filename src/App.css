@@ -26,12 +26,13 @@ p {
 
 .container-player {
     display: flex;
+    height: 40%;
+    width: 30%;
     box-sizing: border-box;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 150px;
 }
 
 .container-question {
@@ -44,12 +45,12 @@ p {
 
 .container-player p {
     color: var(--004);
-    font-size: 2em;
+    font-size: 1em;
 }
 
 input {
     box-sizing: border-box;
-    width: 80%;
+    width: 100%;
     padding: .5em 1em;
     border: 2px solid var(--002);
     background-color: var(--006);
@@ -71,6 +72,7 @@ button {
     cursor: pointer;
     transition: ease all 2s;
     margin-top: 15px;
+    padding: .5em;
 }
 
 button:hover {
@@ -80,6 +82,14 @@ button:hover {
 
 .logo-mhedtech {
     width: 130px;
+}
+
+.container-welcome {
+    height: 40%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .container-welcome p:first-child {
@@ -181,6 +191,14 @@ progress::-webkit-progress-bar {
     border-radius: 15px;
 }
 
+.container-game-over {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
 .container-game-over h2 {
     color: var(--004);
     font-size: 2em;
@@ -189,28 +207,38 @@ progress::-webkit-progress-bar {
 .container-card {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 40%;
     justify-self: center;
 }
 
 .card {
+    height: 90%;
     width: 30%;
     border: 2px solid var(--004);
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .card-title {
     color: var(--004);
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .card-content {
-    font-size: 3em;
+    font-size: 5em;
     font-family: var(--primary-font);
     margin: auto;
     color: var(--004);
+}
+
+.icon {
+    margin-bottom: 5px;
 }
 
 .gold {
@@ -232,8 +260,12 @@ progress::-webkit-progress-bar {
         height: 90%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         justify-content: space-between;
+    }
+
+    .container-player {
+        width: 100%;
     }
 
     .container-progress {
@@ -250,23 +282,19 @@ progress::-webkit-progress-bar {
     }
 
     .img-full {
-        width: 250px;
+        width: 230px;
     }
 
     .img-low {
-        width: 100px;
+        display: none;
     }
 
-    button, .btn-continue {
-        width: 100%;
-        height: 40px;
+    .card-content {
+        font-size: 3em;
     }
+
 
     @media screen and (max-width: 380px) {
-
-        .img-low {
-            display: none;
-        }
 
         .img-question {
             height: 250px;
