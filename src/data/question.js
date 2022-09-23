@@ -190,6 +190,78 @@ const data = [
         ],
         answer: "Rafael Danilo"
 
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52377895842_cc9c926f5e_w.jpg",
+        options:  [
+            "Lucas Mendonça",
+            "Italo",
+            "Eduardo Rangel",
+            "Paulo",
+            "Glauber"
+        ],
+        answer: "Paulo"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52378837276_0c59d42ae5_w.jpg",
+        options:  [
+            "Lucas Mendonça",
+            "Lucas Araújo",
+            "Marcos Faria",
+            "Bruno",
+            "Eugênio"
+        ],
+        answer: "Lucas Mendonça"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52379179573_b46670eaaa_w.jpg",
+        options:  [
+            "Luana",
+            "Rafaela",
+            "Stefanie",
+            "Silvia",
+            "Brenda"
+        ],
+        answer: "Stefanie"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52378949091_68fc3ba4e6_w.jpg",
+        options:  [
+            "Luana",
+            "Jane",
+            "Cileia",
+            "Aline",
+            "Mercia"
+        ],
+        answer: "Jane"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52379179518_8105bfd620_w.jpg",
+        options:  [
+            "Marcos Oliveira",
+            "Sidney",
+            "Lucas Mendonça",
+            "Luiz",
+            "Carlos"
+        ],
+        answer: "Carlos"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52378009392_e1f079eebe_w.jpg",
+        options:  [
+            "Napoleão",
+            "Claudio",
+            "Douglas",
+            "Fabio",
+            "Antônio"
+        ],
+        answer: "Napoleão"
+
     }
 ];
 
