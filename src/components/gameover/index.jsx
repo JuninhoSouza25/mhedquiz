@@ -17,6 +17,7 @@ function GameOver( {player, setFieldPlayer, setPlayer} ) {
 
     let gold = (quizState.questions.length * 10) / 3 * 2
     let bronze = (quizState.questions.length * 10) / 3
+    let size = 23
 
   return (
     <div className="container-game-over">
@@ -30,27 +31,27 @@ function GameOver( {player, setFieldPlayer, setPlayer} ) {
             <p className={`card-content ${quizState.score >= gold ? "gold" : quizState.score < gold && quizState.score >= bronze ? "silver" : "bronze"}`}>{quizState.score}</p>
             {quizState.score >= gold ? 
             <div>
-              <AiFillStar color="#FFD700" size={25}/>
-              <AiFillStar color="#FFD700" size={25}/>
-              <AiFillStar color="#FFD700" size={25}/>
-              <AiFillStar color="#FFD700" size={25}/>
-              <AiFillStar color="#FFD700" size={25}/>
+              <AiFillStar color="#FFD700" size={size}/>
+              <AiFillStar color="#FFD700" size={size}/>
+              <AiFillStar color="#FFD700" size={size}/>
+              <AiFillStar color="#FFD700" size={size}/>
+              <AiFillStar color="#FFD700" size={size}/>
             </div> : 
               quizState.score < gold && quizState.score >= bronze ? 
             <div>
-              <AiFillStar color="#C3C7C7" size={25}/>
-              <AiFillStar color="#C3C7C7" size={25}/>
-              <AiFillStar color="#C3C7C7" size={30}/>
-              <AiOutlineStar color="#C3C7C7" size={25}/>
-              <AiOutlineStar color="#C3C7C7" size={25}/>
+              <AiFillStar color="#C3C7C7" size={size}/>
+              <AiFillStar color="#C3C7C7" size={size}/>
+              <AiFillStar color="#C3C7C7" size={size}/>
+              <AiOutlineStar color="#C3C7C7" size={size}/>
+              <AiOutlineStar color="#C3C7C7" size={size}/>
             </div>
              :
             <div>
-              <AiFillStar color="#CD7F32" size={25}/>
-              <AiFillStar color="#CD7F32" size={25}/>
-              <AiOutlineStar color="#CD7F32" size={25}/>
-              <AiOutlineStar color="#CD7F32" size={25}/>
-              <AiOutlineStar color="#CD7F32" size={25}/>
+              <AiFillStar color="#CD7F32" size={size}/>
+              <AiFillStar color="#CD7F32" size={size}/>
+              <AiOutlineStar color="#CD7F32" size={size}/>
+              <AiOutlineStar color="#CD7F32" size={size}/>
+              <AiOutlineStar color="#CD7F32" size={size}/>
             </div>}
           </div>
           <div className="card">
@@ -58,27 +59,27 @@ function GameOver( {player, setFieldPlayer, setPlayer} ) {
             <p className="card-content">{quizState.questionsAnswered}</p>
             {quizState.score >= gold ? 
             <div>
-              <GiCheckMark color="green" size={25} />
-              <GiCheckMark color="green" size={25} />
-              <GiCheckMark color="green" size={25} />
-              <GiCheckMark color="green" size={25} />
-              <GiCheckMark color="green" size={25} />
+              <GiCheckMark color="green" size={size} />
+              <GiCheckMark color="green" size={size} />
+              <GiCheckMark color="green" size={size} />
+              <GiCheckMark color="green" size={size} />
+              <GiCheckMark color="green" size={size} />
             </div> : 
               quizState.score < gold && quizState.score >= bronze ? 
             <div>
-              <GiCheckMark color="green" size={25} />
-              <GiCheckMark color="green" size={25} />
-              <GiCheckMark color="green" size={25} />
+              <GiCheckMark color="green" size={size} />
+              <GiCheckMark color="green" size={size} />
+              <GiCheckMark color="green" size={size} />
             </div>
              :
             <div>
-              <GiCheckMark color="green" size={25} />
+              <GiCheckMark color="green" size={size} />
             </div>}
           </div>
           <div className="card">
             <p className="card-title">Tentativas</p>
             <p className="card-content">{quizState.attempt}</p>
-            <MdOutlineQuiz color="#15598c" size={25} />
+            <MdOutlineQuiz color="#15598c" size={size} />
           </div>
         </div>
         <p>Printe essa tela e nos envie!</p>
