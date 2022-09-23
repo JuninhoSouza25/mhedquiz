@@ -6,6 +6,7 @@
   justify-content: center;
   font-family: var(--primary-font);
   background-image: url('./img/bg.jpg');
+  background-attachment: fixed;
 
 
   --001:#ffffff;

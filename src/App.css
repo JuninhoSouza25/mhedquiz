@@ -203,6 +203,11 @@ progress::-webkit-progress-bar {
 .container-game-over h2 {
     color: var(--004);
     font-size: 2em;
+    margin: auto;
+}
+
+.container-game-over button {
+    margin-bottom: 10px;
 }
 
 .container-card {
@@ -212,10 +217,12 @@ progress::-webkit-progress-bar {
     width: 100%;
     height: 40%;
     justify-self: center;
+    margin-top: 10px;
 }
 
 .card {
     height: 90%;
+    height: fit-content;
     width: 30%;
     border: 2px solid var(--004);
     border-radius: 25px;
@@ -234,7 +241,6 @@ progress::-webkit-progress-bar {
 .card-content {
     font-size: 5em;
     font-family: var(--primary-font);
-    margin: auto;
     color: var(--004);
 }
 
