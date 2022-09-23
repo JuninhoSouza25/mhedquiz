@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
 import { QuizContext } from '../../context/quiz';
-
 import Welcome from '../../components/welcome';
 import Question from '../../components/question';
 import GameOver from '../../components/gameover';
@@ -26,10 +25,11 @@ export default function Start(){
 
     return(
         <div className="container-start">
-            <img className={fieldPlayer ? "img-full" : "img-low"} src={Logo} alt="MhedQuizz Dia das Crianças"/>
+            <img className={quizState.gameStage !== "Playing" ? "img-full" : "img-low"} src={Logo} alt="MhedQuizz Dia das Crianças"/>
             {fieldPlayer && (
                 <div className='container-player'>
                     <p>Digite seu nome e clique em entrar:</p>
+                    
                     <input type="text" placeholder='Digite seu nome aqui' value={player} onChange={(e) => setPlayer(e.target.value)} />
                     <button onClick={handlePlayer}>Entrar</button>
                 </div>
@@ -37,7 +37,7 @@ export default function Start(){
             {!fieldPlayer && quizState.gameStage === "Start" && <Welcome player={player}/>}
             {quizState.gameStage === "Playing" && <Question />}
             {quizState.gameStage === "End" && <GameOver player={player} setFieldPlayer={setFieldPlayer} setPlayer={setPlayer} />}
-            <img className='logo-mhedtech' src={LogoMhedtech} alt="Mhedtech"/>
+            {!quizState.answerSelected && <img className='logo-mhedtech' src={LogoMhedtech} alt="Mhedtech"/>}
         </div>
     )
 }

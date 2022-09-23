@@ -18,7 +18,7 @@ function Question() {
         setSegundos(45)
       }
   }, 1000)
-    if(quizState.answeredSelected){
+    if(quizState.answerSelected){
       clearInterval(timer)
 
     }
@@ -52,7 +52,7 @@ function Question() {
     <div className='container-question'>
       <p>Pergunta {quizState.currentQuestion + 1} de {quizState.questions.length}</p>
       <div className='container-progress'>
-          <spam className='timer'>{minutos < 10 ? "0" + minutos : minutos}:{segundos < 10 ? "0" + segundos : segundos}</spam>
+          <div className='timer'>{minutos < 10 ? "0" + minutos : minutos}:{segundos < 10 ? "0" + segundos : segundos}</div>
           <progress className={timeBar} value={segundos} max="45">{minutos < 10 ? "0" + minutos : minutos}:{segundos < 10 ? "0" + segundos : segundos}</progress>
       </div>
       <p id='question'>Quem é essa criança?</p>
@@ -69,7 +69,7 @@ function Question() {
           />
         ))}
       </div>
-      {quizState.answeredSelected && (
+      {quizState.answerSelected && (
         <button className='btn-continue' onClick={handleClick}>Continuar</button>
       )}
     </div>

@@ -5,7 +5,9 @@ const Option = ({ option, selectOption, answer }) => {
   const [quizState, dispatch] = useContext(QuizContext)
 
   return (
-    <div className={`option ${!quizState.answerSelected ? "selected" : "unselected"}`} onClick={() => selectOption()}>
+    <div 
+    onClick={() => selectOption()} 
+    className={`option ${quizState.answerSelected === option ? "selected" : " "}  ${!quizState.answerSelected  ? " " : " "}`} >
       <p>{option}</p>
     </div>
   )

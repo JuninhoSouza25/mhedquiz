@@ -9,7 +9,7 @@ const initialState = {
     questionsAnswered: 0,
     currentQuestion: 0,
     score: 0,
-    answeredSelected: false,
+    answerSelected: false,
     attempt: 1,
 }
 
@@ -44,14 +44,14 @@ const quizReducer = (state, action) => {
                 ...state,
                 currentQuestion: nextQuestion,
                 gameStage: endGame ? STAGES[2] : state.gameStage,
-                answeredSelected: false,
+                answerSelected: false,
             }
 
         case "NEW_GAME":
             return initialState;
 
         case 'CHECK_ANSWER':
-            if (state.answeredSelected) return state;
+            if (state.answerSelected) return state;
 
             const answer = action.payload.answer;
             const option = action.payload.option;
@@ -80,7 +80,7 @@ const quizReducer = (state, action) => {
                 ...state,
                 score: state.score + timeScore,
                 questionsAnswered: state.questionsAnswered + correctAnswer,
-                answeredSelected: option,
+                answerSelected: option,
             }
 
         case "ATTEMPT":
