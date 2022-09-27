@@ -11,6 +11,7 @@ export default function Start(){
     const [quizState, dispatch] = useContext(QuizContext)
     const [player, setPlayer] = useState("")
     const [fieldPlayer, setFieldPlayer] = useState(true)
+    const [attempt, setAttempt] = useState(0)
 
     useEffect(() => {
         dispatch({type: "REORDER_QUESTIONS"})
@@ -20,6 +21,8 @@ export default function Start(){
         e.preventDefault()
         if (player){
             setFieldPlayer(false)
+            setAttempt(attempt + 1)
+            console.log(attempt)
         }
     }
 
@@ -36,7 +39,7 @@ export default function Start(){
             )}
             {!fieldPlayer && quizState.gameStage === "Start" && <Welcome player={player}/>}
             {quizState.gameStage === "Playing" && <Question />}
-            {quizState.gameStage === "End" && <GameOver player={player} setFieldPlayer={setFieldPlayer} setPlayer={setPlayer} />}
+            {quizState.gameStage === "End" && <GameOver player={player} setFieldPlayer={setFieldPlayer} setPlayer={setPlayer} attempt={attempt} />}
             {!quizState.answerSelected && <img className='logo-mhedtech' src={LogoMhedtech} alt="Mhedtech"/>}
         </div>
     )

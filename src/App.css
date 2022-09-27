@@ -16,7 +16,7 @@ p {
 }
 
 .img-full {
-    width: 330px;
+    width: 17vw;
     transition: all 2s;
 }
 
@@ -230,6 +230,7 @@ progress::-webkit-progress-bar {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 5px 0;
 }
 
 .card-title {
@@ -239,7 +240,7 @@ progress::-webkit-progress-bar {
 }
 
 .card-content {
-    font-size: 5em;
+    font-size: 4em;
     font-family: var(--primary-font);
     color: var(--004);
 }

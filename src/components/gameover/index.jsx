@@ -1,16 +1,13 @@
-import { useContext } from "react"
+import { useContext, useState, useEffect } from "react"
 import { QuizContext } from "../../context/quiz"
 import {AiOutlineStar, AiFillStar} from 'react-icons/ai';
 import {GiCheckMark} from 'react-icons/gi';
 import {MdOutlineQuiz} from 'react-icons/md'
-function GameOver( {player, setFieldPlayer, setPlayer} ) {
+function GameOver( {player, setFieldPlayer, setPlayer, attempt} ) {
     const [quizState, dispatch] = useContext(QuizContext)
-
-
-
+    
     function handleClick(){
       dispatch({type: 'NEW_GAME'})
-      dispatch({type: "ATTEMPT"})
       setFieldPlayer(true)
       setPlayer("")
     }
@@ -78,7 +75,7 @@ function GameOver( {player, setFieldPlayer, setPlayer} ) {
           </div>
           <div className="card">
             <p className="card-title">Tentativas</p>
-            <p className="card-content">{quizState.attempt}</p>
+            <p className="card-content">{attempt}</p>
             <div className="icon"><MdOutlineQuiz color="#15598c" size={size} /></div>
           </div>
         </div>

@@ -10,7 +10,6 @@ const initialState = {
     currentQuestion: 0,
     score: 0,
     answerSelected: false,
-    attempt: 1,
 }
 
 const quizReducer = (state, action) => {
@@ -82,13 +81,6 @@ const quizReducer = (state, action) => {
                 questionsAnswered: state.questionsAnswered + correctAnswer,
                 answerSelected: option,
             }
-
-        case "ATTEMPT":
-            return {
-                ...state,
-                attempt: state.attempt + 1
-            }
-
 
         default: 
             return state;
