@@ -40,7 +40,7 @@ export default function Start(){
             {!fieldPlayer && quizState.gameStage === "Start" && <Welcome player={player}/>}
             {quizState.gameStage === "Playing" && <Question />}
             {quizState.gameStage === "End" && <GameOver player={player} setFieldPlayer={setFieldPlayer} setPlayer={setPlayer} attempt={attempt} />}
-            {!quizState.answerSelected && <img className='logo-mhedtech' src={LogoMhedtech} alt="Mhedtech"/>}
+            {fieldPlayer && <img className='logo-mhedtech' src={LogoMhedtech} alt="Mhedtech"/>}
         </div>
     )
 }
