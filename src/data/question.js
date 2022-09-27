@@ -262,6 +262,42 @@ const data = [
         ],
         answer: "Napoleão"
 
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52389258690_30d48ffae4_w.jpg",
+        options:  [
+            "Douglas",
+            "Claudio",
+            "Rafael Sorbello",
+            "Victor",
+            "Antônio"
+        ],
+        answer: "Rafael Sorbello"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52389076363_d618bb1cd9_w.jpg",
+        options:  [
+            "Jane",
+            "Silvia",
+            "Elizangela",
+            "Larissa",
+            "Nayara"
+        ],
+        answer: "Larissa"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52389258680_b8876bd354_w.jpg",
+        options:  [
+            "Jane",
+            "Silvia",
+            "Elizangela",
+            "Larissa",
+            "Nayara"
+        ],
+        answer: "Nayara"
+
     }
 ];
 
