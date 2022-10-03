@@ -346,6 +346,78 @@ const data = [
         ],
         answer: "Cileia"
 
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52401247022_d7857e4674_w.jpg",
+        options:  [
+            "Lucas Mendonça",
+            "Marcus Fantoni",
+            "Lucas Araújo",
+            "Antonio",
+            "Carlos"
+        ],
+        answer: "Lucas Araújo"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52401261147_8cb4d1c927_w.jpg",
+        options:  [
+            "Lucas Mendonça",
+            "Marcus Fantoni",
+            "Lucas Araújo",
+            "Lucas Henrique",
+            "Carlos"
+        ],
+        answer: "Lucas Henrique"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52402202985_6bcfb89f4a_w.jpg",
+        options:  [
+            "Fernanda Rodrigues",
+            "Luana",
+            "Thais",
+            "Larissa",
+            "Stefanie"
+        ],
+        answer: "Thais"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52401774561_b399901987_w.jpg",
+        options:  [
+            "Napoleão",
+            "Wander",
+            "Eugênio",
+            "Claudio",
+            "Paulo"
+        ],
+        answer: "Claudio"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52401774521_20e0dcd532_w.jpg",
+        options:  [
+            "Napoleão",
+            "Wander",
+            "Rafael Sorbello",
+            "Claudio",
+            "Douglas"
+        ],
+        answer: "Douglas"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52402292313_d11607c501_w.jpg",
+        options:  [
+            "Rafael Danilo",
+            "Antônio",
+            "Ítalo",
+            "Claudio",
+            "Eduardo Rangel"
+        ],
+        answer: "Antônio"
+
     }
 ];
 
