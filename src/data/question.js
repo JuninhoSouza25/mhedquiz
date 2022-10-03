@@ -426,7 +426,7 @@ const data = [
             "Fernanda Rodrigues",
             "Larissa",
             "Thais",
-            "Stefanie"
+            "Aline"
         ],
         answer: "Aline"
 
