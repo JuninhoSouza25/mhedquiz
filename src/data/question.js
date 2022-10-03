@@ -418,7 +418,19 @@ const data = [
         ],
         answer: "Antônio"
 
-    }
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52402762974_9a86a74fec_w.jpg",
+        options:  [
+            "Luana",
+            "Fernanda Rodrigues",
+            "Larissa",
+            "Thais",
+            "Stefanie"
+        ],
+        answer: "Aline"
+
+    },
 ];
 
 export default data;
