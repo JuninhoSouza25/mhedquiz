@@ -228,7 +228,7 @@ const data = [
 
     },
     {
-        image: "https://live.staticflickr.com/65535/52378949091_68fc3ba4e6_w.jpg",
+        image: "https://live.staticflickr.com/65535/52392986575_152a5d6b77_w.jpg",
         options:  [
             "Luana",
             "Jane",
@@ -297,6 +297,54 @@ const data = [
             "Nayara"
         ],
         answer: "Nayara"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52392558456_c6863169ef_w.jpg",
+        options:  [
+            "Rafael Danilo",
+            "Paulo",
+            "Lucas Henrique",
+            "Eduardo Benedicto",
+            "Eduardo Rangel"
+        ],
+        answer: "Eduardo Rangel"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52392986625_12da352b8f_w.jpg",
+        options:  [
+            "Elizangela",
+            "Poliana",
+            "Jane",
+            "Fernanda Moreira",
+            "Stefanie"
+        ],
+        answer: "Poliana"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52392901409_2bab50fdda_w.jpg",
+        options:  [
+            "Carlos",
+            "Leandro",
+            "Italo",
+            "Juan",
+            "Rafael Danilo"
+        ],
+        answer: "Italo"
+
+    },
+    {
+        image: "https://live.staticflickr.com/65535/52401730101_d8e08d52a0_w.jpg",
+        options:  [
+            "Jane",
+            "Cileia",
+            "Glauciene",
+            "Poliana",
+            "Silvia"
+        ],
+        answer: "Cileia"
 
     }
 ];

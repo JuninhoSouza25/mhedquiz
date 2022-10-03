@@ -22,7 +22,6 @@ export default function Start(){
         if (player){
             setFieldPlayer(false)
             setAttempt(attempt + 1)
-            console.log(attempt)
         }
     }
 

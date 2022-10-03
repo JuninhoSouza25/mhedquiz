@@ -1,8 +1,9 @@
-import { useContext, useState, useEffect } from "react"
+import { useContext } from "react"
 import { QuizContext } from "../../context/quiz"
 import {AiOutlineStar, AiFillStar} from 'react-icons/ai';
 import {GiCheckMark} from 'react-icons/gi';
-import {MdOutlineQuiz} from 'react-icons/md'
+import {MdOutlineQuiz} from 'react-icons/md';
+
 function GameOver( {player, setFieldPlayer, setPlayer, attempt} ) {
     const [quizState, dispatch] = useContext(QuizContext)
     
